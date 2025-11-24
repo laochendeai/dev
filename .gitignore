@@ -1,0 +1,136 @@
+# 80%胜率剥头皮交易系统 - Git忽略文件
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 交易相关文件
+*.log
+logs/
+*.log.*
+trading_logs/
+backtest_logs/
+
+# API密钥和配置
+.env
+.env.local
+.env.production
+config.json
+api_keys.txt
+secrets.txt
+private_config.py
+
+# 数据文件
+*.csv
+*.json
+*.xlsx
+*.h5
+*.pkl
+*.pickle
+data/
+results/
+backtest_results/
+historical_data/
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+*.pid
+
+# 测试覆盖率
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# 文档生成
+docs/_build/
+site/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# 特定于项目的忽略
+# - 排除大文件以免超过GitHub限制
+*.hdf5
+*.bin
+*.feather
+*.parquet
+
+# - 排除模型文件
+models/
+*.model
+*.h5
+*.pb
+
+# - 排除优化结果
+optimization_results/
+grid_search_results/
+hyperopt_results/
+
+# - 排除实盘交易记录
+live_trading_records/
+real_trades/
+execution_logs/
