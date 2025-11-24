@@ -7,7 +7,7 @@
 import time
 import logging
 from datetime import datetime
-from gateio_ml_predictor import GateIOMLPredictor
+from gateio_ml_predictor import WorkingMLPredictor
 
 # 配置日志
 logging.basicConfig(
@@ -38,7 +38,7 @@ def main():
     try:
         # 初始化交易系统
         print("🎯 初始化Gate.io真实测试网交易系统...")
-        predictor = GateIOMLPredictor(API_KEY, SECRET, testnet=True)
+        predictor = WorkingMLPredictor(API_KEY, SECRET, testnet=True)
 
         print(f"✅ 系统初始化成功")
         print(f"🌐 交易所: {predictor.exchange_name}")
