@@ -1,34 +1,24 @@
-# 80%胜率剥头皮交易系统 - 依赖包列表
+# Gate.io机器学习交易系统依赖包
 
-# 核心数据处理
-numpy>=1.21.0
-pandas>=1.3.0
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
 
-# 机器学习库
-scikit-learn>=1.0.0
-tensorflow>=2.8.0
-joblib>=1.1.0
+# 机器学习
+scikit-learn>=1.3.0
 
-# 加密货币交易
-ccxt>=2.0.0
+# 数据获取
+ccxt>=3.1.0
+requests>=2.30.0
 
-# 数据可视化
-matplotlib>=3.5.0
-seaborn>=0.11.0
+# 异步支持
+aiohttp>=3.8.0
 
-# 实用工具
-tqdm>=4.64.0
-requests>=2.28.0
+# 时间处理
+python-dateutil>=2.8.0
 
-# 可选依赖
-# scipy>=1.7.0          # 科学计算
-# plotly>=5.0.0         # 交互式图表
-# jupyter>=1.0.0        # Jupyter notebook支持
-# pytest>=6.0.0        # 单元测试
-# black>=22.0.0         # 代码格式化
-# flake8>=4.0.0         # 代码检查
+# 日志
+loguru>=0.7.0
 
-# 开发环境依赖 (可选)
-# python-dotenv>=0.19.0 # 环境变量管理
-# pre-commit>=2.17.0    # Git hooks
-# sphinx>=4.0.0         # 文档生成
+# 其他工具
+tqdm>=4.65.0

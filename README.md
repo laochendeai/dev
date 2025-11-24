@@ -1,15 +1,46 @@
-# What is this?
+# Gate.io机器学习交易系统
 
-The github.dev web-based editor is a lightweight editing experience that runs entirely in your browser. You can navigate files and source code repositories from GitHub, and make and commit code changes.
+基于机器学习的Gate.io期货自动化交易系统，支持实盘测试网环境。
 
-There are two ways to go directly to a VS Code environment in your browser and start coding:
+## 快速启动
 
-* Press the . key on any repository or pull request.
-* Swap `.com` with `.dev` in the URL. For example, this repo https://github.com/github/dev becomes http://github.dev/github/dev
+### 安装依赖
+```bash
+pip install -r requirements.txt
+```
 
-Preview the gif below to get a quick demo of github.dev in action.
+### 配置API密钥
+```bash
+export GATEIO_API_KEY="your_api_key"
+export GATEIO_API_SECRET="your_secret"
+export GATEIO_TESTNET=true
+```
 
-![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
+### 启动交易系统
+```bash
+python deploy_real_gateio_trading.py
+```
 
-# Why?
-It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
+## 系统特性
+
+- 🧠 **机器学习预测**: 基于随机森林的价格预测模型
+- ⚡ **实时交易**: 每30秒分析市场并自动下单
+- 🛡️ **风险控制**: 内置止盈止损机制
+- 📊 **实时监控**: 完整的交易日志和性能统计
+- 🌐 **测试网支持**: 在Gate.io测试网环境安全交易
+
+## 查看委托
+
+所有真实委托可在Gate.io测试网页面查看：
+- 现货委托: https://testnet.gate.com/orders
+- 期货委托: https://testnet.gate.com/futures/USDT/ETH_USDT
+
+## 获取测试币
+
+测试网USDT和ETH: https://testnet.gate.com/faucet
+
+## 重要提示
+
+- 本系统运行在测试网环境，不会产生真实资金损失
+- 请确保账户有足够的测试币进行交易
+- 建议先用小额资金测试系统稳定性
