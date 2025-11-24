@@ -1,0 +1,29 @@
+{
+  "test_date": "2025-11-24T06:47:18.590000",
+  "strategy": "adaptive_optimized",
+  "parameters": {
+    "rsi_period": 7,
+    "rsi_oversold": 30,
+    "rsi_overbought": 75,
+    "ma_short": 5,
+    "ma_long": 21,
+    "bb_period": 15,
+    "bb_std": 1.8,
+    "min_signal_strength": 0.3,
+    "atr_period": 14,
+    "atr_multiplier": 2.0,
+    "risk_per_trade": 0.01,
+    "min_time_between_trades": 300,
+    "max_holding_time": 3600,
+    "volume_spike_threshold": 1.2
+  },
+  "performance": {
+    "total_trades": 1,
+    "win_rate": 1.0,
+    "total_pnl": 12.247860635696574,
+    "avg_pnl": 12.247860635696574,
+    "return_pct": 0.0,
+    "profit_factor": Infinity,
+    "current_balance": 10000.0
+  }
+}
